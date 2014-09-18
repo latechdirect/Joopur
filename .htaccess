@@ -1,1 +1,5 @@
-DirectoryIndex index.php
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} ^/index\.(html)
+RewriteRule ^(.*) /index.php
